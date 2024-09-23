@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(Img/Hotel/ITC-Royal-Bengal.png) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Adjust the form width */
+.reg-form-width {
+  max-width: 600px; /* Increase the width here */
+}
+
+.form-group {
+  position: relative;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 0.9rem;
+}
+
+
+#btn {
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+#btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p > a {
+  color: white;
+  text-decoration: none;
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
